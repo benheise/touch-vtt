@@ -52,7 +52,7 @@ function tokenHudExists() {
 }
 
 function getActiveToken() {
-  return canvas && canvas.hud && canvas.hud.token && canvas.hud.token.object
+  return canvas?.hud?.token?.object
 }
 
 function areDirectionalArrowsEnabled() {

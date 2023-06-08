@@ -17,7 +17,7 @@ class FoundryCanvas {
     this.raw.pan({ x, y, scale: zoom })
   }
 
-  zoom(scale) {
+  zoomScreen(scale) {
     this.raw.pan({ scale })
   }
 
@@ -96,8 +96,8 @@ class FoundryCanvas {
   }
 
   get ruler() {
-    const layer = canvas && canvas.controls
-    return layer && layer.ruler
+    const layer = canvas?.controls
+    return layer?.ruler
   }
 }
 

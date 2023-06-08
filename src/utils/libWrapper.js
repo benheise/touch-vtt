@@ -6,7 +6,7 @@ export let libWrapper = undefined
 
 Hooks.once('init', () => {
   // Check if the real module is already loaded - if so, use it
-  if (globalThis.libWrapper && !(globalThis.libWrapper.is_fallback ?? true)) {
+  if (!(globalThis.libWrapper?.is_fallback ?? true)) {
     libWrapper = globalThis.libWrapper
     return
   }
@@ -54,7 +54,7 @@ Hooks.once('init', () => {
         original = obj[fn_name]
         obj[fn_name] = wrapper
       } else {
-        throw `libWrapper Shim: "${target}" does not exist or could not be found.`
+        throw new Error(`libWrapper Shim: "${target}" does not exist or could not be found.`)
       }
     }
   }

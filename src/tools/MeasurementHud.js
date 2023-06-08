@@ -122,9 +122,7 @@ export function initMeasurementHud({ canvasTouchToMouseAdapter }) {
     canvas.hud.touchMeasurement = new TouchMeasurementHud({ canvasTouchToMouseAdapter })
 
     wrapMethod('Ruler.prototype._onMouseMove', function (wrapped, event, ...args) {
-      if (event.data != null && event.data.destination != null) {
-        event.data.destination.originType = event.data?.originalEvent?.originType
-      }
+      event.data.destination.originType = event.data?.destination ? event.data?.originalEvent?.originType : event.data.destination.originType;
       return wrapped.call(this, event, ...args)
     })
 
