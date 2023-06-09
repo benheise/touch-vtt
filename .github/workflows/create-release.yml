@@ -45,7 +45,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./touch-vtt.zip
-          asset_name: touch-vtt-${{ steps.get_version.outputs.VERSION }}.zip
+          asset_name: touch-vtt-${{ github.env.VERSION }}.zip
           asset_content_type: application/zip
       - name: Upload Release Asset Module.json
         id: upload-release-asset-module-json
