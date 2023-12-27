@@ -32,11 +32,11 @@
       "path": "lang/de.json"
     }
   ],
-  "url": "https://github.com/kajecode/touch-vtt",
-  "download": "https://github.com/kajecode/touch-vtt/releases/download/v1.10.1/touch-vtt.zip",
-  "manifest": "https://github.com/kajecode/touch-vtt/releases/download/v1.10.1/module.json",
+  "url": "https://github.com/benheise/touch-vtt",
+  "download": "https://github.com/benheise/touch-vtt/releases/download/v1.10.1/touch-vtt.zip",
+  "manifest": "https://github.com/benheise/touch-vtt/releases/download/v1.10.1/module.json",
   "license": "https://www.gnu.org/licenses/gpl-3.0.en.html",
-  "readme": "https://github.com/kajecode/touch-vtt/blob/master/README.md",
-	"changelog": "https://github.com/kajecode/touch-vtt/blob/master/CHANGELOG.md",
-  "bugs": "https://github.com/kajecode/touch-vtt/issues"
+  "readme": "https://github.com/benheise/touch-vtt/blob/master/README.md",
+	"changelog": "https://github.com/benheise/touch-vtt/blob/master/CHANGELOG.md",
+  "bugs": "https://github.com/benheise/touch-vtt/issues"
 }
