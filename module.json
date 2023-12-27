@@ -11,8 +11,8 @@
   "version": "1.10.1",
   "compatibility" : {
     "minimum": "9",
-    "maximum": "10",
-    "verified": "10.291"
+    "maximum": "11",
+    "verified": "11.315"
   },
   "scripts": [
     "dist/touch-vtt.js"
